@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     && docker-php-ext-configure gd \
-    --with-freetype-dir=/usr/include/ \
-    --with-jpeg-dir=/usr/include/ \
+    --with-freetype=/usr/include/ \
+    --with-jpeg=/usr/include/ \
     && docker-php-ext-install gd mysqli zip \
     && a2enmod rewrite
 
