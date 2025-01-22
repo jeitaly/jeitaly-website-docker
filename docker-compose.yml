@@ -9,11 +9,11 @@ services:
       - "127.0.0.1:8080:80"
     volumes:
       - ./website:/var/www/html
+      - ./php-apache/max_size.ini:/usr/local/etc/php/conf.d/max_size.ini
     depends_on:
       - mysql
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html
-      - UPLOAD_LIMIT=64M
     restart: always
 
   mysql:
