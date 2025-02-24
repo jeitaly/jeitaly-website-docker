@@ -21,7 +21,7 @@ Before running this setup, ensure you have the following installed on your syste
 
 2. **Start the Containers**
    ```sh
-   docker-compose up -d
+   docker compose up -d
    ```
    This command will:
    - Start an Apache server with PHP and WordPress installed.
@@ -40,7 +40,7 @@ Before running this setup, ensure you have the following installed on your syste
 
 To stop the containers, run:
 ```sh
-docker-compose down
+docker compose down
 ```
 
 ## Persistent Data
@@ -50,7 +50,7 @@ docker-compose down
 
 ## Troubleshooting
 
-- If port 8080 is in use, modify the `docker-compose.yml` file and change `127.0.0.1:8080:80` to another port.
+- If port 8080 is in use, modify the `docker compose.yml` file and change `127.0.0.1:8080:80` to another port.
 - If you experience database connection issues, ensure MySQL is running and check the container logs:
   ```sh
   docker logs mysql
