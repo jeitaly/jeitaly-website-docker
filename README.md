@@ -15,8 +15,8 @@ Before running this setup, ensure you have the following installed on your syste
 
 1. **Clone the Repository**
    ```sh
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/jeitaly/jeitaly-website-docker.git
+   cd jeitaly-website-docker
    ```
 
 2. **Start the Containers**
